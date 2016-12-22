@@ -6,7 +6,13 @@
   "scripts": {
     "dev": "webpack -d --watch",
     "dev-server": "webpack-dev-server --progress --colors  --output-public-path=/dist/",
-    "production": "webpack -p"
+    "clean": "rm -R dist",
+
+    
+    "production": "npm run webpackProduction & npm run clearSource & npm run clearConfig",
+    "webpackProduction": "webpack -p",
+    "clearSource": "rn -R src",
+    "clearConfig": "rn -R config"
   },
   "author": "Bart Jan van Assen",
   "license": "Mine",
