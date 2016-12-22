@@ -9,10 +9,10 @@
     "clean": "rm -R dist",
 
     
-    "production": "npm run webpackProduction & npm run clearSource & npm run clearConfig",
+    "production": "npm run webpackProduction && npm run clearSource & npm run clearConfig",
     "webpackProduction": "webpack -p",
-    "clearSource": "rn -R src",
-    "clearConfig": "rn -R config"
+    "clearSource": "rm -R src",
+    "clearConfig": "rm -R config"
   },
   "author": "Bart Jan van Assen",
   "license": "Mine",
